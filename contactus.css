@@ -1,0 +1,200 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+
+header{
+    position: sticky;
+    top: 0px;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+#navname{
+position: absolute;
+left: 63%;
+}
+#navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .45;
+}
+
+/* logo section */
+
+#logo {
+    margin: 0px 20px;
+    padding: 3px 5px;
+}
+#logo img {
+    width: 215px;
+    height: 60px;
+}
+
+/* Navigation section */
+
+#nav{
+    display: flex;
+    list-style: none;
+}
+#nav li a {
+    padding: 5px 9px;
+    margin: 2px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: aliceblue;
+    transition: .1s;
+    transition: background-color 1s ;
+    transition: color 1s ;
+}
+#nav li a:hover{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 16px;
+}
+
+/* section home */
+
+
+#home {
+    padding: 40px 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 228px;
+}
+#home::before {
+    content: "";
+    background:url("emailtouch.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: .75;
+}
+p {
+    padding: 30px 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* contact section */
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0px;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    display: block;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    margin-bottom: .5rem;
+    border: 1px solid powderblue;
+}
+#contact-box input:hover,
+#contact-box textarea:hover{
+    
+    border: 1.5px solid black;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Metal Mania', cursive;
+}
+#contact-box input[type='submit']{
+    background-color: green;
+    color: whitesmoke;
+    width: 20%;
+    cursor: pointer;
+    transition: .2s;
+}
+#contact-box input[type='submit']:hover{
+    transform:scale(1.2);
+    border: 2px solid black;
+}
+
+
+/* utility class */
+
+.primary-heading{
+ font-weight: 700;
+    font-size: 3rem;
+}
+
+@media(max-width: 1000px){
+	/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#logo img {
+    width: 114px;
+    height: 40px;
+}
+#logo {
+    margin: 0px;
+    padding-top: 10px;
+}
+#navname{
+position: static;
+
+}
+#navbar ul li a {
+    font-size: 1.3rem;
+    padding: 0px 5px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+/* Home */
+#home p{
+    font-size: 20px;
+    padding: 5px 0px;
+}
+.primary-heading{
+    font-size: 35px;
+}
+#home{
+	margin-top: 20px;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 245px;
+}
+#home::before{
+    height: 380px;
+    }
+
+/* Contact */
+#contact-box{
+    padding: 0px;
+}
+#contact-box form{
+    width: 70%;
+}
+#contact-box form input[type='submit']{
+    width:fit-content;
+}
+
+
+}

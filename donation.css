@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+
+}
+.b-image {
+  /* The image used */
+  background-image: url("bg.jpg");
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(1px);
+
+  /* Full height */
+  height: 90%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form{
+      position: absolute;
+    top: 18%;
+    right: 10%;
+}

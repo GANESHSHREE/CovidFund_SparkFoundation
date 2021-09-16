@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <!--<link rel="stylesheet" media="screen and (max-width: 1000px)" href="phone.css">-->
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <div class="logo"><h1 class=""><img src="https://internship.thesparksfoundation.info/assests/img/logo.png" height="50px;" width="100px"></h1></div><h1 class="sp">THE SPARKS FOUNDATION</h1>
+            </div>
+            <div id="navname">
+                <ul id="nav">
+                    <li id="list1"><a href="#">Home</a></li>
+                    <li id="list2"><a href="#">Services</a></li>
+                    <li id="list3"><a href="#">About us</a></li>
+                    <li id="list4"><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   <!--  <section id="home">
+        <h1 class="primary-heading">Get in touch</h1>
+        <p>If you have any questions, please feel free to drop us a line. If you don't get an answer immediately. We
+            might just be travelling through the middle of no-where. We will be back to you as soon as we can. That's a
+            promise.</p>
+    </section> -->
+
+    <section id="contact">
+        <div id="contact-box">
+            <form method="post">
+                <div class="formgroup">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="formgroup">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="Email" placeholder="Enter your Email">
+                </div>
+                <div class="formgroup">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formgroup">
+                    <input type="submit" value="SUBMIT" name="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+<?php 
+echo "hii";
+if (isset($_POST['submit'])){
+	$name=$_POST['name'];
+	$mail=$_POST['Email'];
+	$msg=$_POST['message'];
+	echo "$name";
+	echo "$mail";
+	echo "$msg";
+    $mail=mail("gietnotes@gmail.com", "name", "$msg");
+    if($mail){
+        mail($mail, "thank", "message");
+        echo "hello";
+    }
+}
+ ?>

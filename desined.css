@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	margin-top: 0px;
+	width: 100%;
+	height: 100vh;
+
+}
+.bg-image {
+  /* The image used */
+  background-image: url("https://img.etimg.com/thumb/msid-76443288,width-640,resizemode-4,imgsize-269855/saluting-the-corona-warriors.jpg");
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(3px);
+
+  /* Full height */
+  height: 90%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+
+	width: 100%;
+	height: 10vh;
+	background:#ff6b0f ;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+nav .logo{
+	width: 25%;
+	margin-left: 50px;
+
+}
+nav .sp{
+	position: absolute;
+    top: 24px;
+    left: 156px;
+}
+nav .menu{
+	
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+nav .menu a{
+	width: 25%;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	
+
+}
+main{
+	position: absolute;
+	top: 9%;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+
+}
+section{
+
+}
+section h3{
+	font-size: 55px;
+	font-weight: 200;
+	color: #0fff77;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 20px black;
+	font-family: algerian;
+
+}
+section h1{
+	font-size: 25px;
+	font-weight: 20;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 20px black;
+	font-family: all;
+	color: red;
+	font-weight: bolder;
+
+}
+section p{
+	font-size: 25px;
+	color:white;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 20px black;
+
+}
+section a{
+
+	padding: 12px 35px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-decoration:none;
+	transition: all .5s ease;
+	color: white;
+	margin-top: 200px;
+}
+section .btnone{
+	background: #599cff;
+	margin-right: 20px;
+
+}
+.btnone:hover{
+	background: #65fcc2;
+}
+section .btntwo{
+	background:#599cff ;
+
+}
+.btntwo:hover{
+	background: #65fcc2;
+}
+.change_content:after{
+	content: '';
+	animation: backwards 10s infinite linear;
+}
+@keyframes changecontent{
+	100%{content: DEV PARIWAR;}
+	100%{content: GAYATRI PARIWAR;}
+}
